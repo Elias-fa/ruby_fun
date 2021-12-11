@@ -42,14 +42,31 @@
 # puts prime4?(75)
 
 #####///////#####
-require 'prime'
-array = [2, 3, 4, 6, 8]
+# require 'prime'
+# array = [2, 3, 4, 6, 8]
 
-def prime_count(array)
-  array.select {|number| Prime.prime(number)}.count
+# def prime_count(array)
+#   array.select {|number| Prime.prime(number)}.count
+# end
+
+# prime_count(array)
+
+#####///////######
+
+#create a method that will take in two arrays of names and find the unique names 
+#between the both of them.
+
+def unique_names(names1, names2)
+  join_arrays(names1, names2)
 end
 
-prime_count(array)
+def join_arrays(array1, array2)
+  array = []
+  array.concat(array1, array2).uniq
+end
 
+names1 = ["Ava", "Emma", "Olivia"]
+names2 = ["Olivia", "Sophia", "Emma"]
+puts(unique_names(names1, names2))
 
 

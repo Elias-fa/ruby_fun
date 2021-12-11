@@ -29,7 +29,7 @@ end
 Paul.new.i_love_paul(99, 1)
 
 100.times do 
-  puts "I FUCKING LOVE PAUL"
+  puts "I LOVE PAUL"
 end
 
 
