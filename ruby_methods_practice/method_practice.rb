@@ -86,8 +86,19 @@
 # puts total
 
 
-numbers = [1, 2, 3, 4, 5]
-puts numbers.inject { |total, n| total + n } 
+# numbers = [1, 2, 3, 4, 5]
+# puts numbers.inject { |total, n| total + n } 
         #total becomes the 1 in the array and n iterates through the other numbers in the array adding them to total
         #inject takes a value to start with (the 0 in your example), and a block, and it runs that block once for each element of the list.
+# puts numbers.inject(0) { |total, n| total + n } 
+        #your starting accumulator value is 0
+# puts numbers.inject(:+) 
+        #inject knows to take all numbers and calculate their sum (can use / * -)
+
+# strings = %w(elias fletcher alewel)
+
+# puts strings.inject(0) { |total, str| total + str.size}
+# puts strings.reduce(0) { |total, str| total + str.size}
+
+
 
