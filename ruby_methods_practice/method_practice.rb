@@ -62,10 +62,10 @@
 
 # ex_array = [1, "string", [], ["item1", "item2"]]
 
-# # puts ex_array.size
-# # puts ex_array.empty?
-# # puts ex_array.pop
-# # puts ex_array.join(' ')
+# puts ex_array.size
+# puts ex_array.empty?
+# puts ex_array.pop
+# puts ex_array.join(' ')
 # puts ex_array.flatten
 
 ##############################
