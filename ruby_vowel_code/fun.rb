@@ -5,7 +5,7 @@ sentence = "this has 4 vowels"
 
 
 def vowel_count(ex_str)
-  print ex_str.split("").select {|l| @vowels.any?(l)}.count
+  print ex_str.split("").select { |l| @vowels.any?(l) }.count
 end
 
 
