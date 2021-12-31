@@ -7,8 +7,8 @@ my_string = '12atest'
 #puts my_string =~ my_regexp
 #will give the position of the first appearance of the letter a in the regexp
 
-puts 'Enter a number:'
-user_input = gets.chomp.to_i
+# puts 'Enter a number:'
+# user_input = gets.chomp.to_i
 
 # if user_input <= 5
 #   puts arr[2]
@@ -29,11 +29,16 @@ user_input = gets.chomp.to_i
 # end
 
 
-family = (
-  wife: 23
-  child: 1
+family = {
+  wife: 23,
+  child: 1,
   husband: 25
-)
+}
 
 puts 'Enter the member of the family:'
-value = gets.strip.to_sym  #strip takes out all trailing white spaces
+member = gets.strip.to_sym  #strip takes out all trailing white spaces
+
+# puts family[member]
+puts family.key?(member) ? "Age is: #{family[member]}" : "I don't know whom you are looking for..."
+
+
