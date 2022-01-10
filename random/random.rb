@@ -1,4 +1,4 @@
-arr = ['string', "string", ["nested array with string"], :my_symbol]
+# arr = ['string', "string", ["nested array with string"], :my_symbol]
 #puts arr[2]
 
 my_regexp = /[abc]/
@@ -68,4 +68,17 @@ my_string = '12atest'
 # puts palindrome?('My name is Elias!')
 
 
+
+i = 0
+new_array = [1, 2, 3, 4]
+
+while i < new_array.length
+  puts "Element: #{new_array[i]}"
+  i += 1
+end
+
+until i >= new_array.length
+  puts "Element: #{new_array[i]}"
+  i += 1
+end
 
