@@ -29,16 +29,31 @@ my_string = '12atest'
 # end
 
 
-family = {
-  wife: 23,
-  child: 1,
-  husband: 25
-}
+# family = {
+#   wife: 23,
+#   child: 1,
+#   husband: 25
+# }
 
-puts 'Enter the member of the family:'
-member = gets.strip.to_sym  #strip takes out all trailing white spaces
+# puts 'Enter the member of the family:'
+# member = gets.strip.to_sym  #strip takes out all trailing white spaces
 
-# puts family[member]
-puts family.key?(member) ? "Age is: #{family[member]}" : "I don't know whom you are looking for..."
+# # puts family[member]
+# puts family.key?(member) ? "Age is: #{family[member]}" : "I don't know whom you are looking for..."
 
 
+
+
+puts "Choose cat, dog, or cow: "
+animal = $stdin.gets.chomp
+
+case animal
+  when 'cat'
+    puts "meow"
+  when 'dog'
+    puts "woof"
+  when 'cow'
+    puts "moo"
+  else
+    puts 'i dunno'
+  end
