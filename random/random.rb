@@ -44,16 +44,28 @@ my_string = '12atest'
 
 
 
-puts "Choose cat, dog, or cow: "
-animal = $stdin.gets.chomp
+# puts "Choose cat, dog, or cow: "
+# animal = $stdin.gets.chomp
 
-case animal
-  when 'cat'
-    puts "meow"
-  when 'dog'
-    puts "woof"
-  when 'cow'
-    puts "moo"
-  else
-    puts 'i dunno'
-  end
+# case animal
+#   when 'cat'
+#     puts "meow"
+#   when 'dog'
+#     puts "woof"
+#   when 'cow'
+#     puts "moo"
+#   else
+#     puts 'i dunno'
+#   end
+
+
+# predicate method will return a boolean
+# def palindrome?(string)
+#   normalized_string = string.gsub(/\W/, '').downcase
+#   return normalized_string == normalized_string.reverse
+# end
+
+# puts palindrome?('My name is Elias!')
+
+
+
