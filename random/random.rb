@@ -69,16 +69,54 @@ my_string = '12atest'
 
 
 
-i = 0
-new_array = [1, 2, 3, 4]
+# i = 0
+# new_array = [1, 2, 3, 4]
 
-while i < new_array.length
-  puts "Element: #{new_array[i]}"
-  i += 1
-end
+# while i < new_array.length
+#   puts "Element: #{new_array[i]}"
+#   i += 1
+# end
 
-until i >= new_array.length
-  puts "Element: #{new_array[i]}"
-  i += 1
-end
+# until i >= new_array.length
+#   puts "Element: #{new_array[i]}"
+#   i += 1
+# end
+
+
+# array_new = (1..5).to_a
+
+# array_new.each do |a|
+#   puts "Element: #{a}"
+# end
+
+
+
+# 5.times do |i|
+#   puts "Element: #{i}"
+# end
+
+
+# 1.upto(10) do |i|
+#   puts "This is element #{i}"
+# end
+
+# 10.downto(1) do |i|
+#   puts "This is element #{i}"
+# end
+
+# 3.upto(7) { |i| puts i }
+# 3.upto(7) { |i| puts "This number: #{i}" }
+
+
+# loop do
+#   puts 'working...'
+#   break if rand(10) > 5
+# end 
+
+#below is how you can iterate over a hash
+# {key: 'value', other_key: 10}.each do |key, value|
+#   puts "Key: #{key}"
+#   puts "Value: #{value}"
+# end
+
 
