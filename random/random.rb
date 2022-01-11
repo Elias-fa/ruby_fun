@@ -119,4 +119,15 @@ my_string = '12atest'
 #   puts "Value: #{value}"
 # end
 
+#below range 1-5 is made into an array and each value is individually mapped out with string interpolation.
+# (1..5).to_a.map {|i| puts "Each is mapped: #{i}"}
+# (1..5).to_a.map {|i| puts i * 2}
 
+# map_array = (1..5).to_a.map { |i| i * 2 }
+# puts map_array.inspect
+
+map_array2 = ['apple,', 'banana', 'cherry'].map.with_index do |element, index| 
+  "Element #{index + 1}: #{element}"
+end
+# Element 1: apple
+puts map_array2.inspect
