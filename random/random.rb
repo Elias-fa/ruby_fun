@@ -1,3 +1,7 @@
+require 'pry'
+
+
+
 # arr = ['string', "string", ["nested array with string"], :my_symbol]
 #puts arr[2]
 
@@ -126,8 +130,13 @@ my_string = '12atest'
 # map_array = (1..5).to_a.map { |i| i * 2 }
 # puts map_array.inspect
 
-map_array2 = ['apple,', 'banana', 'cherry'].map.with_index do |element, index| 
-  "Element #{index + 1}: #{element}"
-end
-# Element 1: apple
-puts map_array2.inspect
+# map_array2 = %w(apple banana cherry).map.with_index do |element, index|
+#   "Element #{index + 1}: #{element}"
+# end
+# # Element 1: apple
+# puts map_array2.inspect
+
+# above was part of lecture on ruby cycles
+
+
+
