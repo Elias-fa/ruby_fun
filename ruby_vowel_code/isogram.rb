@@ -13,7 +13,7 @@
 #   end
 # end
 
-my_string = 'Thre'
+my_string = 'Three ee e'
 
 def isogram(string)
   cast_and_downcase(string)
@@ -31,7 +31,7 @@ def isogram?
 end
 
 def isogram_equation
-  @downcase_string.split('').map { |i| @downcase_string.count(i) }.any?(2)
+  @downcase_string.split('').map { |i| @downcase_string.count(i) }.any?(2..5)
 end
 
 puts isogram(my_string)
