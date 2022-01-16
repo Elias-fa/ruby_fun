@@ -39,29 +39,30 @@ require 'pry'
 #   given_string.split.match?(given_string.split)
 # end
 
-my_string = 'door'
+my_string = 'Dode'
 
 def isogram(given_string)
   downcase_string = given_string.downcase
-  downcase_string.split('').map { |i| downcase_string.match?(i * 2) }.any?(true)
+  downcase_string.split('').map { |i| downcase_string.count(i) }.any?(2)
 end
 
 def isogram?
-  return false if isogram(my_string) == true ? 'false' : 'true'
+  return false if isogram(given_string) == true
 end
 
-# above code will detect the same character repeated consecutively. not if the string word contains the same character twice
-# even separated by other characters.
 
 
 
 # puts isogram?
-# puts isogram(my_string)
+puts isogram(my_string)
 # puts my_string.downcase
 
 
-def double_letter(given_string)
-  given_string.split('').map { |i| given_string.match?(i * 2) }.any?(true)
-end
+# def double_letter(given_string)
+#   given_string.split('').map { |i| given_string.match?(i * 2) }.any?(true)
+# end
 
-puts double_letter(my_string)
+# puts double_letter(my_string)
+
+# above code will detect the same character repeated consecutively. not if the string word contains the same character twice
+# even separated by other characters.
