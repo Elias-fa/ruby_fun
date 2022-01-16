@@ -1,3 +1,6 @@
+require 'pry'
+
+
 
 # @vowels = ['a', 'e', 'i', 'o', 'u'] #@ symbol turned this into an instance variable so we can use this object outside the method used.
 # sentence = "this has 4 vowels"
@@ -36,12 +39,29 @@
 #   given_string.split.match?(given_string.split)
 # end
 
-my_string = 'Threet'
+my_string = 'door'
 
 def isogram(given_string)
   downcase_string = given_string.downcase
   downcase_string.split('').map { |i| downcase_string.match?(i * 2) }.any?(true)
 end
 
+def isogram?
+  return false if isogram(my_string) == true ? 'false' : 'true'
+end
+
+# above code will detect the same character repeated consecutively. not if the string word contains the same character twice
+# even separated by other characters.
+
+
+
+# puts isogram?
 # puts isogram(my_string)
-puts my_string.downcase
+# puts my_string.downcase
+
+
+def double_letter(given_string)
+  given_string.split('').map { |i| given_string.match?(i * 2) }.any?(true)
+end
+
+puts double_letter(my_string)
