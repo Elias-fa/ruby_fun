@@ -39,17 +39,25 @@ require 'pry'
 #   given_string.split.match?(given_string.split)
 # end
 
-my_string = 'dor'
+my_string = 'Thret'
 
-def isogram(given_string)
-  @my_string = given_string
-  return true if isogram?
-  downcase_string = @my_string.downcase
-  return false if downcase_string.split('').map { |i| downcase_string.count(i) }.any?(2) == true
+def isogram(string)
+  cast_and_downcase(string)
+  return true if isogram? || isogram_equation == false
+  return false if isogram_equation == true
+end
+
+def cast_and_downcase(cast_string)
+  @my_string = cast_string
+  @downcase_string = @my_string.downcase
 end
 
 def isogram?
-  @my_string.empty? 
+  @my_string.empty?
+end
+
+def isogram_equation
+  @downcase_string.split('').map { |i| @downcase_string.count(i) }.any?(2)
 end
 
 puts isogram(my_string)
