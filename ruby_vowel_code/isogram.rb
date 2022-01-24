@@ -13,7 +13,7 @@
 #   end
 # end
 
-my_string = 'Threee'
+my_string = 'Thre'
 
 def isogram(string)
   cast_and_downcase(string)
@@ -35,5 +35,3 @@ def isogram_equation
 end
 
 puts isogram(my_string)
-
-
